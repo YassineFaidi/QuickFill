@@ -76,18 +76,6 @@ pip install -r requirements.txt
 
 ---
 
-## Using the Script
-1. Ensure you have run `cookieSaver.py` at least once to save your Google Form cookies.
-2. Start the script with:
-   ```bash
-   python script.py
-   ```
-3. Ensure your WhatsApp Web session is active by scanning the QR code if necessary.
-4. Open the specific WhatsApp conversation where the Google Form link will be shared.
-5. Leave the script running — it will automatically detect and process any received Google Form links.
-
----
-
 ## Notes
 - The script requires an active internet connection and WhatsApp Web login.
 - Ensure the Google Forms shared are accessible without restrictions (e.g., CAPTCHA).
@@ -105,5 +93,3 @@ pip install -r requirements.txt
 - **Yassine Faidi**  
   Contact: `yassinefaidi.contact@gmail.com`
 ```
-
-This `README.md` is a fully structured file, explaining everything step by step, including installation, usage, troubleshooting, and setup. You can save this as `README.md` in the root directory of your project.
