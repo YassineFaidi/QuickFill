@@ -31,14 +31,7 @@ git clone https://github.com/YassineFaidi/Auto-Form-Filler.git
 cd Auto-Form-Filler
 ```
 
-### Step 2: Set Up a Virtual Environment
-Create and activate a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
-```
-
-### Step 3: Install Dependencies
+### Step 2: Install Dependencies
 Install the required dependencies listed in `requirements.txt`:
 ```bash
 pip install -r requirements.txt
