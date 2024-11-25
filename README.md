@@ -27,8 +27,8 @@ The **Auto Form Filler Script** is an automation tool designed to help you be am
 ### Step 1: Clone or Download the Repository
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/YourUsername/auto_form_filler.git
-cd auto_form_filler
+git clone https://github.com/YassineFaidi/Auto-Form-Filler.git
+cd Auto-Form-Filler
 ```
 
 ### Step 2: Set Up a Virtual Environment
