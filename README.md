@@ -1,87 +1,119 @@
 # Auto Form Filler Script
 
-## Description
-The **Auto Form Filler Script** is an automation tool designed to help you be among the first to fill out Google Forms shared via WhatsApp. The script listens for a Google Form link in your WhatsApp conversations, opens it instantly, fills out the required fields, and submits the form automatically.
+## Overview
+
+The **Auto Form Filler Script** is an automation tool designed to quickly fill out Google Forms shared via WhatsApp. This script listens for incoming Google Form links in WhatsApp conversations, automatically fills in the required fields, and submits the form. It is ideal for ensuring you're one of the first to fill out forms that may have time-sensitive submissions.
 
 ---
 
 ## Features
-- Detects Google Form links in WhatsApp conversations.
-- Automatically opens and fills out the form fields (e.g., text, email).
-- Handles radio button selections based on label text.
-- Submits the form in either English (`Submit`) or French (`Envoyer`).
-- Uses saved cookies to bypass login prompts for Google Forms.
+
+- **Link Detection**: Automatically detects and opens Google Form links shared in WhatsApp conversations.
+- **Auto Fill**: Fills form fields such as name and email automatically.
+- **Radio Button Handling**: Supports selecting radio buttons based on their labels.
+- **Language Support**: Detects form submission buttons in English (`Submit`) and French (`Envoyer`) and submits the form accordingly.
+- **Cookie Management**: Uses saved cookies to bypass login prompts for Google Forms.
 
 ---
 
 ## Requirements
+
 - Python 3.8+
-- Google Chrome browser installed
-- WhatsApp Web access enabled
-- Required Python libraries (see `requirements.txt`)
+- Google Chrome installed on your system
+- WhatsApp Web enabled and logged in
+- The required Python libraries (listed in `requirements.txt`)
 
 ---
 
-## Installation Steps
+## Installation Instructions
 
-### Step 1: Clone or Download the Repository
-Clone the repository to your local machine:
+Follow the steps below to install and set up the script:
+
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
+
 ```bash
 git clone https://github.com/YassineFaidi/Auto-Form-Filler.git
 cd Auto-Form-Filler
 ```
 
-### Step 2: Install Dependencies
-Install the required dependencies listed in `requirements.txt`:
+### 2. Install Dependencies
+
+Next, install the required Python libraries using `pip`:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## Usage Steps
+## Usage Instructions
 
 ### Step 1: Save Google Form Cookies
+
+Before running the form filling script, you need to save your Google Form cookies to bypass login prompts.
+
 1. Run the `cookieSaver.py` script:
-   ```bash
-   python cookieSaver.py
-   ```
-2. When the browser opens, manually log in to any Google Form. This ensures your session cookies are saved for later use.
-3. The cookies will be saved in a file named `google_form_cookies.pkl`.
+
+    ```bash
+    python cookieSaver.py
+    ```
+
+2. The script will open Google Chrome, and you must manually log in to any Google Form to generate the necessary cookies.
+3. The cookies will be saved in a file named `google_form_cookies.pkl`, which will be used later to bypass login on subsequent form submissions.
 
 ### Step 2: Run the Auto Form Filler Script
+
+Now that your cookies are saved, you're ready to run the main script:
+
 1. Run the `script.py` file:
-   ```bash
-   python script.py
-   ```
-2. When prompted, scan the QR code using WhatsApp on your mobile device to log into WhatsApp Web.
+
+    ```bash
+    python script.py
+    ```
+
+2. When prompted, scan the QR code with WhatsApp on your mobile device to log into WhatsApp Web.
 
 ### Step 3: Set Up WhatsApp Monitoring
+
 1. Open the WhatsApp conversation where you expect to receive the Google Form link.
-2. The script will monitor the conversation for any incoming messages containing a Google Form link.
+2. The script will monitor this conversation for any incoming messages containing a Google Form link.
 
 ### Step 4: Automatic Form Filling
-- When a Google Form link is detected:
-  1. The script opens the form instantly.
-  2. Autofills fields like your name and email.
-  3. Selects radio buttons or checkboxes based on labels.
-  4. Submits the form and displays a success message.
+
+Once the script detects a Google Form link:
+
+- It will open the form in the browser.
+- The script will automatically fill in the predefined fields (e.g., name, email).
+- If there are radio buttons or checkboxes, the script will select them based on their labels.
+- Finally, the script will submit the form and print a success message in the terminal.
 
 ---
 
-## Notes
-- The script requires an active internet connection and WhatsApp Web login.
-- Ensure the Google Forms shared are accessible without restrictions (e.g., CAPTCHA).
-- Ensure your name, email, and other input data are configured in the script.
+## Additional Notes
+
+- Ensure that WhatsApp Web is logged in before running the script.
+- Make sure the Google Form shared with you is accessible without restrictions, such as CAPTCHA challenges.
+- You can configure your name, email, and other form fields directly in the script.
 
 ---
 
 ## Troubleshooting
-- If the form doesn't load or cookies aren't applied, re-run `cookieSaver.py` to refresh your session cookies.
-- If WhatsApp Web fails to sync, check your internet connection or re-scan the QR code.
+
+- **Form not loading or cookies not applied**: Ensure you've run `cookieSaver.py` and generated fresh cookies.
+- **WhatsApp Web not syncing**: If WhatsApp Web doesn't sync, check your internet connection or re-scan the QR code.
+- **Form submission issues**: If the form is not submitted, verify that the form’s submission button text is detected correctly (either "Submit" or "Envoyer").
 
 ---
 
 ## Author
+
 - **Yassine Faidi**  
-  Contact: `yassinefaidi.contact@gmail.com`
+  Contact: [yassinefaidi.contact@gmail.com](mailto:yassinefaidi.contact@gmail.com)
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
