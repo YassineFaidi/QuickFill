@@ -92,4 +92,3 @@ pip install -r requirements.txt
 ## Author
 - **Yassine Faidi**  
   Contact: `yassinefaidi.contact@gmail.com`
-```
