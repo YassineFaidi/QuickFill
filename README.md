@@ -1,8 +1,8 @@
-# Auto Form Filler Script
+# QuickFill
 
 ## Overview
 
-The **Auto Form Filler Script** is an automation tool designed to quickly fill out Google Forms shared via WhatsApp. This script listens for incoming Google Form links in WhatsApp conversations, automatically fills in the required fields, and submits the form. It is ideal for ensuring you're one of the first to fill out forms that may have time-sensitive submissions.
+**QuickFill** is an automation tool designed to quickly fill out Google Forms shared via WhatsApp. This script listens for incoming Google Form links in WhatsApp conversations, automatically fills in the required fields, and submits the form. It is ideal for ensuring you're one of the first to fill out forms that may have time-sensitive submissions.
 
 ---
 
@@ -34,8 +34,8 @@ Follow the steps below to install and set up the script:
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/YassineFaidi/Auto-Form-Filler.git
-cd Auto-Form-Filler
+git clone https://github.com/YassineFaidi/QuickFill.git
+cd QuickFill
 ```
 
 ### 2. Install Dependencies
@@ -103,14 +103,14 @@ Once the script detects a Google Form link:
 
 - **Form not loading or cookies not applied**: Ensure you've run `cookieSaver.py` and generated fresh cookies.
 - **WhatsApp Web not syncing**: If WhatsApp Web doesn't sync, check your internet connection or re-scan the QR code.
-- **Form submission issues**: If the form is not submitted, verify that the form’s submission button text is detected correctly (either "Submit" or "Envoyer").
+- **Form submission issues**: If the form is not submitted, verify that the form's submission button text is detected correctly (either "Submit" or "Envoyer").
 
 ---
 
 ## Author
 
 - **Yassine Faidi**  
-  Contact: [yassinefaidi.contact@gmail.com](mailto:yassinefaidi.contact@gmail.com)
+  Contact: [yassine.faidi.117@gmail.com](mailto:yassine.faidi.117@gmail.com)
 
 ---
 
